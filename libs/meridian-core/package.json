@@ -1,0 +1,7 @@
+{
+  "name": "@meridian/core",
+  "version": "1.4.0",
+  "description": "Base primitives shared by all meridian SDK packages.",
+  "main": "index.js",
+  "dependencies": {}
+}

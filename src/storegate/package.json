@@ -1,0 +1,6 @@
+{
+  "name": "storegate-web",
+  "version": "1.0.0",
+  "description": "Storefront gateway web layer helper assets.",
+  "dependencies": { "@meridian/telemetry": "3.0.2" }
+}

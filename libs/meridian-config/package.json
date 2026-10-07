@@ -1,0 +1,7 @@
+{
+  "name": "@meridian/config",
+  "version": "2.1.0",
+  "description": "Configuration loader for meridian services.",
+  "main": "index.js",
+  "dependencies": { "@meridian/core": "1.4.0" }
+}

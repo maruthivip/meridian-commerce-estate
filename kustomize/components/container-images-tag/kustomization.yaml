@@ -1,0 +1,39 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/promobeam
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/basketledger
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/orderforge
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/fxrates
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/mailcourier
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/storegate
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/trafficmimic
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/payguard
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/catalogvault
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/suggestr
+  newTag: CONTAINER_IMAGES_TAG
+- name: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/freightquote
+  newTag: CONTAINER_IMAGES_TAG

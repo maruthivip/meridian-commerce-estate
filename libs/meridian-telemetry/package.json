@@ -1,0 +1,7 @@
+{
+  "name": "@meridian/telemetry",
+  "version": "3.0.2",
+  "description": "Telemetry emitter used by storegate.",
+  "main": "index.js",
+  "dependencies": { "@meridian/config": "2.1.0" }
+}

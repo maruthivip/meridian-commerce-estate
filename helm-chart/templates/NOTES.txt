@@ -1,0 +1,15 @@
+{{- if and .Values.storegate.create .Values.storegate.externalService }}
+Note: It may take a few minutes for the LoadBalancer IP to be available.
+
+Watch the status of the storegate IP address with:
+    kubectl get --namespace {{ .Release.Namespace }} svc -w {{ .Values.storegate.name }}-external
+
+Get the external IP address of the storegate:
+    export SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ .Values.storegate.name }}-external --template "{{"{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"}}")
+    echo http://$SERVICE_IP
+{{- end }}
+{{- if .Values.storegate.virtualService.create }}
+Get the external IP address of the ingress gateway:
+    export SERVICE_IP=$(kubectl get svc --namespace {{ .Values.storegate.virtualService.gateway.namespace }} {{ .Values.storegate.virtualService.gateway.name }} --template "{{"{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"}}")
+    echo http://$SERVICE_IP
+{{- end }}

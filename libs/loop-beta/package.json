@@ -1,0 +1,7 @@
+{
+  "name": "@meridian/loop-beta",
+  "version": "0.9.0",
+  "description": "Flag resolution half; pairs with loop-alpha.",
+  "main": "index.js",
+  "dependencies": { "@meridian/loop-alpha": "0.9.0" }
+}
